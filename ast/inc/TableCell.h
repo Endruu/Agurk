@@ -1,11 +1,11 @@
 #pragma once
 	
-#include "core/AstBase.h"
+#include "core/AstNode.h"
 
 namespace ast
 {
 
-class TableCell final : public core::AstBase
+class TableCell final : public core::AstNode
 {
 public:
     const string value() const;

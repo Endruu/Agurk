@@ -1,11 +1,11 @@
 #pragma once
 	
-#include "core/AstBase.h"
+#include "core/AstNode.h"
 
 namespace ast
 {
 
-class TableRow final : public core::AstBase
+class TableRow final : public core::AstNode
 {
 public:
     ~TableRow();

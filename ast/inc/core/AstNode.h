@@ -21,13 +21,13 @@ using ImplPtr = std::unique_ptr<T>;
 //#endif
 
 
-class AstBase
+class AstNode
 {
 public:
     const Location location() const;
     const string type() const;
 
-    virtual ~AstBase();
+    virtual ~AstNode();
 };
 
 }

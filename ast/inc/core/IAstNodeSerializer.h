@@ -1,6 +1,6 @@
 #pragma once
 
-#include "AstBase.h"
+#include "AstNode.h"
 
 namespace ast
 {
@@ -40,7 +40,7 @@ public:
     virtual const string serialize(const TableRow& obj) = 0;
     virtual const string serialize(const Tag& obj) = 0;
 
-    virtual const string serialize(const AstBase& obj) = 0;
+    virtual const string serialize(const AstNode& obj) = 0;
 
     virtual ~ISerializer() {};  //TODO: not sure if necessary, maybe the default (non-virtual) dtor is enough
 };

@@ -1,6 +1,6 @@
 #pragma once
 	
-#include "core/AstBase.h"
+#include "core/AstNode.h"
 #include "core/KeywordNameDescription.h"
 #include "Step.h"
 
@@ -9,7 +9,7 @@
 namespace ast
 {
 
-class ScenarioDefinition : public core::AstBase, public core::KeywordNameDescription
+class ScenarioDefinition : public core::AstNode, public core::KeywordNameDescription
 {
 public:
     using StepContainer = std::vector<Step>;

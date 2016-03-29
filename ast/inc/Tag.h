@@ -1,11 +1,11 @@
 #pragma once
 	
-#include "core/AstBase.h"
+#include "core/AstNode.h"
 
 namespace ast
 {
 
-class Tag final : public core::AstBase
+class Tag final : public core::AstNode
 {
 public:
     const string name() const;

@@ -1,11 +1,11 @@
 #pragma once
 	
-#include "core/AstBase.h"
+#include "core/AstNode.h"
 
 namespace ast
 {
 
-class StepArgument : public core::AstBase
+class StepArgument : public core::AstNode
 {
 public:
     virtual ~StepArgument() = 0;

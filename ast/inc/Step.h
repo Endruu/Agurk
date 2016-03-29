@@ -1,12 +1,12 @@
 #pragma once
 	
-#include "core/AstBase.h"
+#include "core/AstNode.h"
 #include "StepArgument.h"
 
 namespace ast
 {
 
-class Step final : public core::AstBase
+class Step final : public core::AstNode
 {
 public:
     const string keyword() const;
