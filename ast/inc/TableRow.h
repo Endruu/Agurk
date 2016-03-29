@@ -5,9 +5,10 @@
 namespace ast
 {
 
-class TableRow : public core::AstBase
+class TableRow final : public core::AstBase
 {
-
+public:
+    ~TableRow();
 };
 
 }

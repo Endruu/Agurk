@@ -1,14 +1,15 @@
 #pragma once
 	
 #include "ScenarioDefinition.h"
-#include "core/TagContainer.h"
+#include "core/TagContainerBase.h"
 
 namespace ast
 {
 
-class Scenario : public ScenarioDefinition, public core::TagContainer
+class Scenario final : public ScenarioDefinition, public core::TagContainerBase
 {
-
+public:
+    ~Scenario();
 };
 
 }

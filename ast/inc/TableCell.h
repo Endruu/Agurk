@@ -5,10 +5,12 @@
 namespace ast
 {
 
-class TableCell : public core::AstBase
+class TableCell final : public core::AstBase
 {
 public:
     const string value() const;
+
+    ~TableCell();
 };
 
 }

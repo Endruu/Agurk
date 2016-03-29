@@ -5,10 +5,11 @@
 namespace ast
 {
 
-class Tag : public core::AstBase
+class Tag final : public core::AstBase
 {
 public:
     const string name() const;
+    ~Tag();
 };
 
 }

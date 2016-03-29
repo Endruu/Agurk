@@ -5,9 +5,10 @@
 namespace ast
 {
 
-class Background : public ScenarioDefinition
+class Background final : public ScenarioDefinition
 {
-
+public:
+    ~Background();
 };
 
 }

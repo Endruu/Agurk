@@ -13,6 +13,9 @@ public:
     const string keyword() const;
     const string name() const;
     const string description() const;
+
+protected:
+    ~KeywordNameDescription();
 };
 
 }

@@ -5,10 +5,11 @@
 namespace ast
 {
 
-class Comment : public core::AstBase
+class Comment final : public core::AstBase
 {
 public:
     const string text() const;
+    ~Comment();
 };
 
 }

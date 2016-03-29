@@ -22,7 +22,9 @@ using ImplPtr = std::unique_ptr<T>;
 
 class AstBase
 {
+protected:
 
+    ~AstBase();
 };
 
 }

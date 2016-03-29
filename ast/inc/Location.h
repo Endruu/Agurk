@@ -5,7 +5,7 @@
 namespace ast
 {
 
-class Location : public core::AstBase
+class Location final : public core::AstBase
 {
 public:
     inline int line() const { return _line; }
