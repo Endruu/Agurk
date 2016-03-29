@@ -42,7 +42,7 @@ public:
 
     virtual const string serialize(const AstNode& obj) = 0;
 
-    virtual ~ISerializer() {};  //TODO: not sure if necessary, maybe the default (non-virtual) dtor is enough
+    virtual ~IAstNodeSerializer() {};  //TODO: not sure if necessary, maybe the default (non-virtual) dtor is enough
 };
 
 }
