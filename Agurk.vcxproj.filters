@@ -1,132 +1,147 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Core">
+      <UniqueIdentifier>{bc80e66b-fc5c-4681-bc0d-7ab27c67a017}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
+    <Filter Include="AST">
+      <UniqueIdentifier>{02005577-7b95-4289-80be-0fe3e1fa8c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST\Inc">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="AST\Src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Core\Inc">
+      <UniqueIdentifier>{ad36e682-6407-425d-ae22-88fb7b738e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Src">
+      <UniqueIdentifier>{128985b6-f446-4a4c-86ac-3dfd3c7ea05b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ast\core\AstBase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ast\Tag.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\Background.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\Comment.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\DataTable.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\DocString.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ast\Examples.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\Feature.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\Location.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\Scenario.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\ScenarioDefinition.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\ScenarioOutline.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\Step.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\StepArgument.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\TableCell.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\TableRow.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AST\Src</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ast\Example.cpp">
+      <Filter>AST\Src</Filter>
     </ClCompile>
-    <ClCompile Include="ast\core\TagContainer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ast\core\TagContainerBase.cpp">
+      <Filter>Core\Src</Filter>
     </ClCompile>
     <ClCompile Include="ast\core\KeywordNameDescription.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ast\core\AstNode.cpp">
+      <Filter>Core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ast\core\DefaultJsonAstNodeSerializer.cpp">
+      <Filter>Core\Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ast\inc\core\AstBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ast\inc\Background.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\Comment.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\DataTable.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\DocString.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ast\inc\Examples.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\Feature.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\Location.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\Scenario.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\ScenarioDefinition.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\ScenarioOutline.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\Step.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\StepArgument.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\TableCell.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\TableRow.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\Tag.h">
-      <Filter>Header Files</Filter>
+      <Filter>AST\Inc</Filter>
     </ClInclude>
-    <ClInclude Include="ast\inc\core\TagContainer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ast\inc\Example.h">
+      <Filter>AST\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ast\inc\core\AstNode.h">
+      <Filter>Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ast\inc\core\IAstNodeSerializer.h">
+      <Filter>Core\Inc</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\core\KeywordNameDescription.h">
-      <Filter>Header Files</Filter>
+      <Filter>Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ast\inc\core\TagContainerBase.h">
+      <Filter>Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="ast\inc\core\DefaultJsonAstNodeSerializer.h">
+      <Filter>Core\Inc</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
