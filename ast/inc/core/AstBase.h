@@ -6,7 +6,8 @@
 namespace ast
 {
 
-using string = std::stringbuf;
+using string = std::string;
+class Location;
 
 namespace core
 {
@@ -22,9 +23,11 @@ using ImplPtr = std::unique_ptr<T>;
 
 class AstBase
 {
-protected:
+public:
+    const Location location() const;
+    const string type() const;
 
-    ~AstBase();
+    virtual ~AstBase();
 };
 
 }
