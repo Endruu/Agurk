@@ -7,7 +7,8 @@ namespace ast
 
 class TableCell : public core::AstBase
 {
-
+public:
+    const string value() const;
 };
 
 }

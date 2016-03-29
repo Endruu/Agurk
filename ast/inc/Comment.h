@@ -7,7 +7,8 @@ namespace ast
 
 class Comment : public core::AstBase
 {
-
+public:
+    const string text() const;
 };
 
 }

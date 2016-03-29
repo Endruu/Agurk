@@ -69,6 +69,9 @@
     <ClCompile Include="ast\core\TagContainer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ast\core\KeywordNameDescription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ast\inc\core\AstBase.h">
@@ -120,6 +123,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ast\inc\core\TagContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ast\inc\core\KeywordNameDescription.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

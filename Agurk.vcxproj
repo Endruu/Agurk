@@ -22,6 +22,7 @@
     <ClCompile Include="ast\Background.cpp" />
     <ClCompile Include="ast\Comment.cpp" />
     <ClCompile Include="ast\core\AstBase.cpp" />
+    <ClCompile Include="ast\core\KeywordNameDescription.cpp" />
     <ClCompile Include="ast\core\TagContainer.cpp" />
     <ClCompile Include="ast\DataTable.cpp" />
     <ClCompile Include="ast\DocString.cpp" />
@@ -42,6 +43,7 @@
     <ClInclude Include="ast\inc\Background.h" />
     <ClInclude Include="ast\inc\Comment.h" />
     <ClInclude Include="ast\inc\core\AstBase.h" />
+    <ClInclude Include="ast\inc\core\KeywordNameDescription.h" />
     <ClInclude Include="ast\inc\core\TagContainer.h" />
     <ClInclude Include="ast\inc\DataTable.h" />
     <ClInclude Include="ast\inc\DocString.h" />

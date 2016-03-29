@@ -7,7 +7,8 @@ namespace ast
 
 class Tag : public core::AstBase
 {
-
+public:
+    const string name() const;
 };
 
 }
