@@ -1,14 +1,17 @@
 #pragma once
 	
 #include "core/AstNode.h"
+#include "TableCell.h"
+
+#include <vector>
 
 namespace ast
 {
 
-class TableRow final : public core::AstNode
+struct TableRow final : public core::AstNode
 {
-public:
-    ~TableRow();
+    using CellContainer = std::vector<TableCell>;
+    CellContainer cells;
 };
 
 }

@@ -10,13 +10,12 @@
 namespace ast
 {
 
-class Example final : public core::AstNode, public core::TagContainerBase, public core::KeywordNameDescription
+struct Example final : public core::AstNode, public core::TagContainerBase, public core::KeywordNameDescription
 {
-public:
-    const TableRow header() const;
     using RowContainer = std::vector<TableRow>;
-    const RowContainer rows() const;
-    ~Example();
+    RowContainer rows;
+
+    TableRow header;
 };
 
 }

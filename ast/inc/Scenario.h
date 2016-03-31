@@ -6,10 +6,9 @@
 namespace ast
 {
 
-class Scenario final : public ScenarioDefinition, public core::TagContainerBase
+struct Scenario final : public ScenarioDefinition, public core::TagContainerBase
 {
-public:
-    ~Scenario();
+
 };
 
 }

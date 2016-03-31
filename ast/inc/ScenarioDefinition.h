@@ -9,11 +9,10 @@
 namespace ast
 {
 
-class ScenarioDefinition : public core::AstNode, public core::KeywordNameDescription
+struct ScenarioDefinition : public core::AstNode, public core::KeywordNameDescription
 {
-public:
     using StepContainer = std::vector<Step>;
-    const StepContainer steps() const;
+    StepContainer steps;
 
     virtual ~ScenarioDefinition() = 0;
 };

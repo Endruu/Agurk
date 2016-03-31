@@ -5,12 +5,9 @@
 namespace ast
 {
 
-class TableCell final : public core::AstNode
+struct TableCell final : public core::AstNode
 {
-public:
-    const string value() const;
-
-    ~TableCell();
+    string value;
 };
 
 }

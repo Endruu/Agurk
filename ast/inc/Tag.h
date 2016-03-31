@@ -5,11 +5,9 @@
 namespace ast
 {
 
-class Tag final : public core::AstNode
+struct Tag final : public core::AstNode
 {
-public:
-    const string name() const;
-    ~Tag();
+    string name;
 };
 
 }

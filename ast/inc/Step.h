@@ -1,20 +1,20 @@
 #pragma once
-	
+
 #include "core/AstNode.h"
 #include "StepArgument.h"
+
+#include <memory>
 
 namespace ast
 {
 
-class Step final : public core::AstNode
+struct Step final : public core::AstNode
 {
-public:
-    const string keyword() const;
-    const string text() const;
+    std::unique_ptr<StepArgument> argument;
 
-    const StepArgument* argument() const;
-
-    ~Step();
+    string keyword;
+    string text;
+    
 };
 
 }

@@ -8,21 +8,20 @@
 #include "Comment.h"
 
 #include <vector>
+#include <memory>
 
 namespace ast
 {
 
-class Feature final : public core::AstNode, public core::TagContainerBase, public core::KeywordNameDescription
+struct Feature final : public core::AstNode, public core::TagContainerBase, public core::KeywordNameDescription
 {
-public:
-    const string language() const;
-    using ScenarioDefinitionContainer = std::vector<const ScenarioDefinition&>;
+    string language;
+    
+    using ScenarioDefinitionContainer = std::vector<std::unique_ptr<ScenarioDefinition>>;
+    ScenarioDefinitionContainer scenarioDefinitions;
+
     using CommentContainer = std::vector<Comment>;
-
-    const CommentContainer comments() const;
-    const ScenarioDefinitionContainer scenarioDefinitions() const;
-
-    ~Feature();
+    CommentContainer comments;
 
 };
 

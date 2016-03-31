@@ -5,9 +5,8 @@
 namespace ast
 {
 
-class StepArgument : public core::AstNode
+struct StepArgument : public core::AstNode
 {
-public:
     virtual ~StepArgument() = 0;
 };
 

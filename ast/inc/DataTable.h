@@ -8,12 +8,10 @@
 namespace ast
 {
 
-class DataTable final : public StepArgument
+struct DataTable final : public StepArgument
 {
-public:
     using RowContainer = std::vector<TableRow>;
-    const RowContainer rows() const;
-    ~DataTable();
+    RowContainer rows;
 };
 
 }

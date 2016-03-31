@@ -5,11 +5,9 @@
 namespace ast
 {
 
-class Comment final : public core::AstNode
+struct Comment final : public core::AstNode
 {
-public:
-    const string text() const;
-    ~Comment();
+    string text;
 };
 
 }

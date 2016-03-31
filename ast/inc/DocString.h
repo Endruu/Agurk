@@ -5,12 +5,10 @@
 namespace ast
 {
 
-class DocString final : public StepArgument
+struct DocString final : public StepArgument
 {
-public:
-    const string content() const;
-    const string contentType() const;
-    ~DocString();
+    string content;
+    string contentType;
 };
 
 }
