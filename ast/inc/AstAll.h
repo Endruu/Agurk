@@ -1,0 +1,17 @@
+#pragma once
+
+#include "Background.h"
+#include "Comment.h"
+#include "DataTable.h"
+#include "DocString.h"
+#include "Example.h"
+#include "Feature.h"
+#include "Location.h"
+#include "Scenario.h"
+#include "ScenarioDefinition.h"
+#include "ScenarioOutline.h"
+#include "Step.h"
+#include "StepArgument.h"
+#include "TableCell.h"
+#include "TableRow.h"
+#include "Tag.h"
