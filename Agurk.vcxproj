@@ -19,32 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ast\Background.cpp" />
-    <ClCompile Include="ast\Comment.cpp" />
-    <ClCompile Include="ast\core\AstNode.cpp" />
-    <ClCompile Include="ast\core\KeywordNameDescription.cpp" />
-    <ClCompile Include="ast\core\TagContainerBase.cpp" />
-    <ClCompile Include="ast\DataTable.cpp" />
-    <ClCompile Include="ast\DocString.cpp" />
-    <ClCompile Include="ast\Example.cpp" />
-    <ClCompile Include="ast\Feature.cpp" />
-    <ClCompile Include="ast\Location.cpp" />
-    <ClCompile Include="ast\Scenario.cpp" />
-    <ClCompile Include="ast\ScenarioDefinition.cpp" />
-    <ClCompile Include="ast\ScenarioOutline.cpp" />
-    <ClCompile Include="ast\Step.cpp" />
-    <ClCompile Include="ast\StepArgument.cpp" />
-    <ClCompile Include="ast\TableCell.cpp" />
-    <ClCompile Include="ast\TableRow.cpp" />
-    <ClCompile Include="ast\Tag.cpp" />
-    <ClCompile Include="ast\core\DefaultJsonAstNodeSerializer.cpp" />
+    <ClCompile Include="ast\DefaultJsonAstNodeSerializer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ast\inc\AstAll.h" />
+    <ClInclude Include="ast\inc\AstFwd.h" />
     <ClInclude Include="ast\inc\Background.h" />
     <ClInclude Include="ast\inc\Comment.h" />
     <ClInclude Include="ast\inc\core\AstNode.h" />
-    <ClInclude Include="ast\inc\core\IAstNodeSerializer.h" />
+    <ClInclude Include="ast\inc\core\IAstNodeVisitor.h" />
     <ClInclude Include="ast\inc\core\KeywordNameDescription.h" />
     <ClInclude Include="ast\inc\core\TagContainerBase.h" />
     <ClInclude Include="ast\inc\DataTable.h" />
@@ -61,6 +45,7 @@
     <ClInclude Include="ast\inc\TableRow.h" />
     <ClInclude Include="ast\inc\Tag.h" />
     <ClInclude Include="ast\inc\core\DefaultJsonAstNodeSerializer.h" />
+    <ClInclude Include="ast\json.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2FBB5F68-8CD6-4D49-B3AC-D0672D007A1B}</ProjectGuid>

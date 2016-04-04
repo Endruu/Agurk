@@ -2,6 +2,9 @@
 
 #include "AstAll.h"
 
+#include "json.hpp"
+
+
 void ast::core::DefaultJsonAstNodeSerializer::visit(const ast::Background& obj)
 {
     
