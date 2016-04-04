@@ -14,7 +14,8 @@ struct Step final : public core::AstNode
 
     string keyword;
     string text;
-    
+
+    void accept(core::IAstNodeVisitor& visitor) override { visitor.visit(*this); };
 };
 
 }

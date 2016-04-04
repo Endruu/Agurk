@@ -1,33 +1,32 @@
 #pragma once
 
-#include "core/IAstNodeSerializer.h"
+#include "core/IAstNodeVisitor.h"
 
 namespace ast
 {
 namespace core
 {
 
-class DefaultJsonAstNodeSerializer : public core::IAstNodeSerializer
+class DefaultJsonAstNodeSerializer : public core::IAstNodeVisitor
 {
 public:
 
-    const string serialize(const Background& obj) override;
-    const string serialize(const Comment& obj) override;
-    const string serialize(const DataTable& obj) override;
-    const string serialize(const DocString& obj) override;
-    const string serialize(const Example& obj) override;
-    const string serialize(const Feature& obj) override;
-    const string serialize(const Location& obj) override;
-    const string serialize(const Scenario& obj) override;
-    const string serialize(const ScenarioOutline& obj) override;
-    const string serialize(const Step& obj) override;
-    const string serialize(const TableCell& obj) override;
-    const string serialize(const TableRow& obj) override;
-    const string serialize(const Tag& obj) override;
+    void visit(const Background& obj) override;
+    void visit(const Comment& obj) override;
+    void visit(const DataTable& obj) override;
+    void visit(const DocString& obj) override;
+    void visit(const Example& obj) override;
+    void visit(const Feature& obj) override;
+    void visit(const Location& obj) override;
+    void visit(const Scenario& obj) override;
+    void visit(const ScenarioDefinition& obj) override;
+    void visit(const ScenarioOutline& obj) override;
+    void visit(const Step& obj) override;
+    void visit(const StepArgument& obj) override;
+    void visit(const TableCell& obj) override;
+    void visit(const TableRow& obj) override;
+    void visit(const Tag& obj) override;
 
-    const string serialize(const AstNode& obj) override;
-
-    virtual ~DefaultJsonAstNodeSerializer();
 };
 
 }

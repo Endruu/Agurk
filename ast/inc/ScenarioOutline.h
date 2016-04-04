@@ -13,6 +13,8 @@ struct ScenarioOutline final : public ScenarioDefinition, public core::TagContai
 {
     using ExampleContainer = std::vector<Example>;
     ExampleContainer examples;
+
+    void accept(core::IAstNodeVisitor& visitor) override { visitor.visit(*this); };
 };
 
 }

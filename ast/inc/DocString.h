@@ -9,6 +9,8 @@ struct DocString final : public StepArgument
 {
     string content;
     string contentType;
+
+    void accept(core::IAstNodeVisitor& visitor) override { visitor.visit(*this); };
 };
 
 }

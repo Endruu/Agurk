@@ -23,6 +23,7 @@ struct Feature final : public core::AstNode, public core::TagContainerBase, publ
     using CommentContainer = std::vector<Comment>;
     CommentContainer comments;
 
+    void accept(core::IAstNodeVisitor& visitor) override { visitor.visit(*this); };
 };
 
 }

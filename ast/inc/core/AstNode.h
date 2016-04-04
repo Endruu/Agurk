@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Location.h"
+#include "core/IAstNodeVisitor.h"
 
 #include <string>
 
@@ -18,6 +19,7 @@ struct AstNode
 
     Location location;
 
+    virtual void accept(core::IAstNodeVisitor& visitor) = 0;
     virtual ~AstNode();
 };
 

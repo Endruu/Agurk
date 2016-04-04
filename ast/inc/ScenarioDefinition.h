@@ -15,6 +15,8 @@ struct ScenarioDefinition : public core::AstNode, public core::KeywordNameDescri
     StepContainer steps;
 
     virtual ~ScenarioDefinition() = 0;
+
+    void accept(core::IAstNodeVisitor& visitor) override { visitor.visit(*this); };
 };
 
 }

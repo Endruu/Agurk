@@ -12,6 +12,8 @@ struct TableRow final : public core::AstNode
 {
     using CellContainer = std::vector<TableCell>;
     CellContainer cells;
+
+    void accept(core::IAstNodeVisitor& visitor) override { visitor.visit(*this); };
 };
 
 }

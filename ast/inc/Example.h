@@ -16,6 +16,8 @@ struct Example final : public core::AstNode, public core::TagContainerBase, publ
     RowContainer rows;
 
     TableRow header;
+
+    void accept(core::IAstNodeVisitor& visitor) override { visitor.visit(*this); };
 };
 
 }
