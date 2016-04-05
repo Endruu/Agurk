@@ -5,9 +5,6 @@
 namespace ast
 {
 
-namespace core
-{
-
 class IAstNodeVisitor
 {
 public:
@@ -30,8 +27,7 @@ public:
 
 protected:
 
-    ~IAstNodeVisitor() {};
+    ~IAstNodeVisitor() {}
 };
 
-}
 }

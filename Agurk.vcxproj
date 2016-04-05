@@ -23,28 +23,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ast\inc\AstAll.h" />
+    <ClInclude Include="ast\DefaultJsonAstNodeSerializer.h" />
     <ClInclude Include="ast\inc\AstFwd.h" />
-    <ClInclude Include="ast\inc\Background.h" />
-    <ClInclude Include="ast\inc\Comment.h" />
-    <ClInclude Include="ast\inc\core\AstNode.h" />
-    <ClInclude Include="ast\inc\core\IAstNodeVisitor.h" />
-    <ClInclude Include="ast\inc\core\KeywordNameDescription.h" />
-    <ClInclude Include="ast\inc\core\TagContainerBase.h" />
-    <ClInclude Include="ast\inc\DataTable.h" />
-    <ClInclude Include="ast\inc\DocString.h" />
-    <ClInclude Include="ast\inc\Example.h" />
-    <ClInclude Include="ast\inc\Feature.h" />
-    <ClInclude Include="ast\inc\Location.h" />
-    <ClInclude Include="ast\inc\Scenario.h" />
-    <ClInclude Include="ast\inc\ScenarioDefinition.h" />
-    <ClInclude Include="ast\inc\ScenarioOutline.h" />
-    <ClInclude Include="ast\inc\Step.h" />
-    <ClInclude Include="ast\inc\StepArgument.h" />
-    <ClInclude Include="ast\inc\TableCell.h" />
-    <ClInclude Include="ast\inc\TableRow.h" />
-    <ClInclude Include="ast\inc\Tag.h" />
-    <ClInclude Include="ast\inc\core\DefaultJsonAstNodeSerializer.h" />
+    <ClInclude Include="ast\inc\AstNodes.h" />
+    <ClInclude Include="ast\inc\IAstNodeVisitor.h" />
     <ClInclude Include="ast\json.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

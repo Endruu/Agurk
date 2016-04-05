@@ -1,13 +1,11 @@
 #pragma once
 
-#include "core/IAstNodeVisitor.h"
+#include "IAstNodeVisitor.h"
 
 namespace ast
 {
-namespace core
-{
 
-class DefaultJsonAstNodeSerializer : public core::IAstNodeVisitor
+class DefaultJsonAstNodeSerializer : public IAstNodeVisitor
 {
 public:
 
@@ -29,5 +27,4 @@ public:
 
 };
 
-}
 }
