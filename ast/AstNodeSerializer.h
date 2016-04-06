@@ -5,7 +5,7 @@
 namespace ast
 {
 
-class DefaultJsonAstNodeSerializer : public IAstNodeVisitor
+class AstNodeSerializer : public IAstNodeVisitor
 {
 public:
 

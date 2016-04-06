@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ast\DefaultJsonAstNodeSerializer.cpp" />
+    <ClCompile Include="ast\AstNodeSerializer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ast\DefaultJsonAstNodeSerializer.h" />
+    <ClInclude Include="ast\AstNodeSerializer.h" />
     <ClInclude Include="ast\inc\AstFwd.h" />
     <ClInclude Include="ast\inc\AstNodes.h" />
     <ClInclude Include="ast\inc\IAstNodeVisitor.h" />
