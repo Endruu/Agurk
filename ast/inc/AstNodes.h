@@ -46,7 +46,7 @@ struct Location final
 
 struct AstNode
 {
-    std::string type;
+    //std::string type;
 
     Location location;
 
@@ -81,9 +81,7 @@ struct ScenarioDefinition : public AstNode, public detail::KeywordNameDescriptio
     using StepContainer = std::vector<Step>;
     StepContainer steps;
 
-    virtual ~ScenarioDefinition() = 0;
-
-    void accept(IAstNodeVisitor& visitor) override { visitor.visit(*this); }
+    virtual ~ScenarioDefinition() = 0 {};
 };
 
 
@@ -121,9 +119,7 @@ struct Step final : public AstNode
 
 struct StepArgument : public AstNode
 {
-    virtual ~StepArgument() = 0;
-
-    void accept(IAstNodeVisitor& visitor) override { visitor.visit(*this); }
+    virtual ~StepArgument() = 0 {};
 };
 
 

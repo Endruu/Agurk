@@ -41,19 +41,7 @@ void ast::AstNodeSerializer::visit(const ast::Feature& obj)
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::Location& obj)
-{
-    
-}
-
-
 void ast::AstNodeSerializer::visit(const ast::Scenario& obj)
-{
-    
-}
-
-
-void ast::AstNodeSerializer::visit(const ast::ScenarioDefinition& obj)
 {
     
 }
@@ -66,12 +54,6 @@ void ast::AstNodeSerializer::visit(const ast::ScenarioOutline& obj)
 
 
 void ast::AstNodeSerializer::visit(const ast::Step& obj)
-{
-    
-}
-
-
-void ast::AstNodeSerializer::visit(const ast::StepArgument& obj)
 {
     
 }
