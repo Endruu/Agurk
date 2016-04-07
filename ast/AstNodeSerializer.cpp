@@ -4,6 +4,16 @@
 
 #include "json.hpp"
 
+using json = nlohmann::json;
+
+struct ast::AstNodeSerializer::Impl
+{
+
+};
+
+ast::AstNodeSerializer::AstNodeSerializer() : pImpl(new ast::AstNodeSerializer::Impl) {}
+ast::AstNodeSerializer::~AstNodeSerializer() {}
+
 
 void ast::AstNodeSerializer::visit(const ast::Background& obj)
 {

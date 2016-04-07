@@ -2,12 +2,18 @@
 
 #include "IAstNodeVisitor.h"
 
+#include <memory>
+
 namespace ast
 {
 
 class AstNodeSerializer : public IAstNodeVisitor
 {
 public:
+    AstNodeSerializer();
+    ~AstNodeSerializer();
+
+private:
 
     void visit(const Background& obj) override;
     void visit(const Comment& obj) override;
@@ -22,6 +28,8 @@ public:
     void visit(const TableRow& obj) override;
     void visit(const Tag& obj) override;
 
+    struct Impl;
+    std::unique_ptr<Impl> pImpl;
 };
 
 }
