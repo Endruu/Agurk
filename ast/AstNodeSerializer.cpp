@@ -15,73 +15,73 @@ ast::AstNodeSerializer::AstNodeSerializer() : pImpl(new ast::AstNodeSerializer::
 ast::AstNodeSerializer::~AstNodeSerializer() {}
 
 
-void ast::AstNodeSerializer::visit(const ast::Background& obj)
+void ast::AstNodeSerializer::visit(ast::Background& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::Comment& obj)
+void ast::AstNodeSerializer::visit(ast::Comment& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::DataTable& obj)
+void ast::AstNodeSerializer::visit(ast::DataTable& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::DocString& obj)
+void ast::AstNodeSerializer::visit(ast::DocString& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::Example& obj)
+void ast::AstNodeSerializer::visit(ast::Example& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::Feature& obj)
+void ast::AstNodeSerializer::visit(ast::Feature& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::Scenario& obj)
+void ast::AstNodeSerializer::visit(ast::Scenario& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::ScenarioOutline& obj)
+void ast::AstNodeSerializer::visit(ast::ScenarioOutline& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::Step& obj)
+void ast::AstNodeSerializer::visit(ast::Step& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::TableCell& obj)
+void ast::AstNodeSerializer::visit(ast::TableCell& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::TableRow& obj)
+void ast::AstNodeSerializer::visit(ast::TableRow& obj)
 {
     
 }
 
 
-void ast::AstNodeSerializer::visit(const ast::Tag& obj)
+void ast::AstNodeSerializer::visit(ast::Tag& obj)
 {
     
 }
