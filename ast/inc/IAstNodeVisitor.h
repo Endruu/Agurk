@@ -9,18 +9,18 @@ class IAstNodeVisitor
 {
 public:
     
-    virtual void visit(const ast::Background& obj) = 0;
-    virtual void visit(const ast::Comment& obj) = 0;
-    virtual void visit(const ast::DataTable& obj) = 0;
-    virtual void visit(const ast::DocString& obj) = 0;
-    virtual void visit(const ast::Example& obj) = 0;
-    virtual void visit(const ast::Feature& obj) = 0;
-    virtual void visit(const ast::Scenario& obj) = 0;
-    virtual void visit(const ast::ScenarioOutline& obj) = 0;
-    virtual void visit(const ast::Step& obj) = 0;
-    virtual void visit(const ast::TableCell& obj) = 0;
-    virtual void visit(const ast::TableRow& obj) = 0;
-    virtual void visit(const ast::Tag& obj) = 0;
+    virtual void visit(ast::Background& obj) = 0;
+    virtual void visit(ast::Comment& obj) = 0;
+    virtual void visit(ast::DataTable& obj) = 0;
+    virtual void visit(ast::DocString& obj) = 0;
+    virtual void visit(ast::Example& obj) = 0;
+    virtual void visit(ast::Feature& obj) = 0;
+    virtual void visit(ast::Scenario& obj) = 0;
+    virtual void visit(ast::ScenarioOutline& obj) = 0;
+    virtual void visit(ast::Step& obj) = 0;
+    virtual void visit(ast::TableCell& obj) = 0;
+    virtual void visit(ast::TableRow& obj) = 0;
+    virtual void visit(ast::Tag& obj) = 0;
 
 protected:
 
