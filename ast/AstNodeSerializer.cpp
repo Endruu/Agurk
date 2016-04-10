@@ -72,6 +72,11 @@ private:
 ast::AstNodeSerializer::AstNodeSerializer() : pImpl(new ast::AstNodeSerializer::Impl) {}
 ast::AstNodeSerializer::~AstNodeSerializer() {}
 
+const std::string ast::AstNodeSerializer::serialize(AstNode& node, int indent)
+{
+    return Impl::serializeAst(node).dump(indent);
+}
+
 
 void ast::AstNodeSerializer::visit(ast::Background& obj)
 {

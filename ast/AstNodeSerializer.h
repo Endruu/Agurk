@@ -3,6 +3,7 @@
 #include "IAstNodeVisitor.h"
 
 #include <memory>
+#include <string>
 
 namespace ast
 {
@@ -10,8 +11,7 @@ namespace ast
 class AstNodeSerializer : public IAstNodeVisitor
 {
 public:
-    AstNodeSerializer();
-    ~AstNodeSerializer();
+    static const std::string serialize(AstNode& node, int indent = -1);
 
 private:
 
@@ -27,6 +27,9 @@ private:
     void visit(TableCell& obj) override;
     void visit(TableRow& obj) override;
     void visit(Tag& obj) override;
+
+    AstNodeSerializer();
+    ~AstNodeSerializer();
 
     struct Impl;
     std::unique_ptr<Impl> pImpl;
