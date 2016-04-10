@@ -3,6 +3,8 @@
 namespace ast
 {
 
+struct AstNode;
+
 struct Background;
 struct Comment;
 struct DataTable;
